@@ -1,9 +1,116 @@
-<mxfile host="app.diagrams.net" modified="2023-08-23T01:11:40.518Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.6.8" etag="hhXtO8Bp3avhj9gBstcd" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-23T01:13:37.323Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="w7t3LPzmSr6NXqzr7XDL" version="21.6.8" type="github">
   <diagram name="第 1 页" id="trvtHthIpzzYYMYSlT87">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-1" value="Client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="952" as="geometry" />
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-2" value="Vite Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="307" y="20" width="150" height="952" as="geometry" />
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-3" value="Browser" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="744" y="20" width="150" height="952" as="geometry" />
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-4" value="loop" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="367" y="667" width="557" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-5" value="[Module update]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="t2QmmaWr8-7YGL84VfUR-4">
+          <mxGeometry x="40" width="517" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-6" value="Request module" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-1" target="t2QmmaWr8-7YGL84VfUR-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="127" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-7" value="Serve HTML file" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-2" target="t2QmmaWr8-7YGL84VfUR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="613" y="179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-8" value="Send module manifest" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-2" target="t2QmmaWr8-7YGL84VfUR-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="246" y="231" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-9" value="Request module dependencies" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-1" target="t2QmmaWr8-7YGL84VfUR-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-10" value="Send module dependencies" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-2" target="t2QmmaWr8-7YGL84VfUR-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="249" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-11" value="Request module code" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-1" target="t2QmmaWr8-7YGL84VfUR-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-12" value="Send module code" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-2" target="t2QmmaWr8-7YGL84VfUR-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="251" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-13" value="Load module code" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-1" target="t2QmmaWr8-7YGL84VfUR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="472" y="491" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-14" value="Request hot module replacement (HMR) connection" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-3" target="t2QmmaWr8-7YGL84VfUR-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="616" y="543" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-15" value="Send HMR connection" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-2" target="t2QmmaWr8-7YGL84VfUR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="618" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-16" value="Subscribe to HMR updates" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-3" target="t2QmmaWr8-7YGL84VfUR-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="618" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-17" value="Send HMR update" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="t2QmmaWr8-7YGL84VfUR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="621" y="745" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2QmmaWr8-7YGL84VfUR-18" value="Apply HMR update" style="curved=1;rounded=0;" edge="1" parent="1" source="t2QmmaWr8-7YGL84VfUR-3" target="t2QmmaWr8-7YGL84VfUR-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="889" y="797" />
+              <mxPoint x="889" y="827" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
